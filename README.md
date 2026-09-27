@@ -23,11 +23,22 @@ La aplicación gestiona su propio entorno virtual de Python para no interferir c
 
 Sigue estos pasos para clonar el repositorio y configurar el comando global en tu terminal:
 
-**1. Clona este repositorio y entra a la carpeta:**
+**1. Clona este repositorio y ejecuta por primera vez (puede tardar un poco):**
 
 ```bash
 git clone https://github.com/leoXxit0/pngbot
 cd pngbot
 chmod +x iniciar.sh
 ./iniciar.sh
+```
+**2. Crea el acceso global:**
+
+```bash
+if [ -n "$ZSH_VERSION" ]; then
+    echo "alias pngbot='$(pwd)/iniciar.sh'" >> ~/.zshrc
+    source ~/.zshrc
+else
+    echo "alias pngbot='$(pwd)/iniciar.sh'" >> ~/.bashrc
+    source ~/.bashrc
+fi
 ```
