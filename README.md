@@ -25,5 +25,5 @@ Sigue estos pasos para clonar el repositorio y configurar el comando global en t
 
 **1. Clona este repositorio y entra a la carpeta:**
 ```bash
-git clone [https://github.com/TU-USUARIO/pngbot.git](https://github.com/TU-USUARIO/pngbot.git)
+git clone [https://github.com/leoXxit0/pngbot](https://github.com/leoXxit0/pngbot)
 cd pngbot
