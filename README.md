@@ -31,8 +31,11 @@ cd pngbot
 chmod +x iniciar.sh
 ./iniciar.sh
 ```
-**2. Crea el acceso global:**
+**2. Abre otra terminal y crea el acceso global:**
 
+```bash
+cd pngbot
+```
 ```bash
 if [ -n "$ZSH_VERSION" ]; then
     echo "alias pngbot='$(pwd)/iniciar.sh'" >> ~/.zshrc
